@@ -1,0 +1,21 @@
+{
+  "name": "auto-emailing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Ip-Tec-auto-emailing"
+  },
+  "author": "ip-tec",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
+}
