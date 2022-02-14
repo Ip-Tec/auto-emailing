@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Emailer</title>
+  </head>
+  <noscript
+    >Your Brower don't supper Java script or has java script turn off</noscript
+  >
+  <body>
+    <header>
+      <nav class="row">
+        <div class="logo col">
+          <h3>Emailer</h3>
+        </div>
+        <div class="links col">
+          <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h3>Auto Emailing</h3>
+      <main>
+        <form name="form" id="form" onsubmit="preventDefault();return false;">
+          <div class="row">
+            <div class="col">
+              <label for="myEmail">Sender Email *</label>
+              <input
+                type="email"
+                name="myEmail"
+                id="myEmail"
+                placeholder="Sender Email"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="col">
+              <label for="mypassworg">Sender Email Password *</label>
+              <input
+                type="password"
+                name="mypassword"
+                id="mypassword"
+                placeholder="Sender Password"
+                autocomplete="current-password"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <input
+              type="password"
+              name="receiverEmail"
+              id="receiverEmail"
+              placeholder="Receiver Email"
+              autocomplete="current-password"
+            />
+
+            <input
+              type="text"
+              name="emailSubject"
+              id="emailSubject"
+              placeholder="Email Subject"
+            />
+          </div>
+          <div class="row">
+            <!-- <input type="port" name="port" placeholder="Port for smtp" /> -->
+            <select id="SMTPPort">
+              <option value="25">25</option>
+              <option value="465">465</option>
+              <option value="587">587</option>
+            </select>
+            <select id="EmailOption">
+              <option value="gmail">Gmail</option>
+              <option value="outlock">Outlock</option>
+              <option value="outlock">Hotmail</option>
+              <option value="outlock">Yahool</option>
+            </select>
+
+            <select id="encryption">
+              <option value="tls">TLS</option>
+              <option value="ssl">SSl</option>
+            </select>
+          </div>
+          <div class="row">
+            <textarea id="EmailBody" placeholder="Email Body"></textarea>
+          </div>
+          <button type="submit" id="btn" onclick="formCheck()">Send Email</button>
+        </form>
+      </main>
+    </section>
+    <footer>
+      <div>
+        <h3>Created with <span>❤</span></h3>
+      </div>
+    </footer>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>

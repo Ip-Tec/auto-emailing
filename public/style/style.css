@@ -1,0 +1,151 @@
+*, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	margin: 0;
+	padding: 0.5rem;
+	color: #ffffff;
+	background: goldenrod;
+	font-size: larger;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+	cursor: pointer;
+}
+
+ul {
+	display: flex;
+	margin: 0.2rem;
+	padding: 0.3rem;
+	align-items: center;
+	justify-content: center;
+}
+
+ul li {
+	list-style: none;
+}
+
+li a:active, li a.active {
+	border-bottom: goldenrod;
+}
+
+li a {
+	margin: 0.2rem;
+	cursor: pointer;
+	padding: 0.5rem;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+section {
+	width: 60%;
+	margin: auto;
+	height: 85vh;
+	display: flex;
+	padding: 0.3rem;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+section h3 {
+	width: 100%;
+	padding: 1rem;
+	display: block;
+	font-size: 2.5rem;
+	color: goldenrod;
+	text-align: center;
+}
+
+main {
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	border-radius: 0.5rem;
+	justify-content: center;
+	background: whitesmoke;
+	box-shadow: 2px 0px 8px goldenrod;
+}
+
+
+div.row {
+	display: flex;
+	margin: 0.2rem;
+	padding: 0.3rem;
+	align-items: center;
+	justify-content: center;
+}
+
+div.col {
+	width: 98%;
+	display: flex;
+	margin: 0 0.3rem;
+	position: relative;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+label {
+	width: 100%;
+	text-align: left;
+	/* position: absolute; */
+}
+
+input, select, textarea {
+	width: 100%;
+	border: none;
+	outline: none;
+	margin: 0.4rem;
+	padding: 0.5rem;
+	background: transparent;
+	border-bottom: 0.15rem solid goldenrod;
+}
+
+select {
+	width: 55%;
+}
+
+textarea {
+	width: 100%;
+	height: 5rem;
+}
+
+button {
+	width: 35%;
+	display: block;
+	margin: 0.4rem;
+	padding: 0.5rem;
+	transition: 0.5s;
+	border-radius: 0.15rem;
+	background: transparent;
+	border: 0.14rem solid goldenrod;
+}
+
+button:hover {
+	color: #382b08;
+	transform: scale(1.3);
+	border-radius: 0.5rem;
+	background: goldenrod;
+}
+
+footer {
+	width: 100%;
+	margin: auto;
+	color: goldenrod;
+	text-align: center;
+}
+
+footer div span {
+	color: #e22020;
+}
